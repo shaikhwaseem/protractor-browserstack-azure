@@ -6,6 +6,10 @@
 trigger:
 - master
 
+variables:
+  browserstackUser: '$(BROWSERSTACK_USERNAME)'
+  browserstackKey: '$(BROWSERSTACK_ACCESS_KEY)'
+
 steps:
 
 - script: npm install
