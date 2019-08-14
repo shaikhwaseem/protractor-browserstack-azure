@@ -15,5 +15,5 @@ steps:
   inputs:
     BrowserStackServiceEndPoint: 'Bstack'
 - script: npm install
-- script: npm run single
+- script: npm run parallel
 - task: BrowserStackResults@0
