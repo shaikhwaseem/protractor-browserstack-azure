@@ -11,7 +11,9 @@ variables:
   browserstackKey: $(BROWSERSTACK_ACCESS_KEY)
 
 steps:
-
+- task: BrowserStackConfig@0
+  inputs:
+    BrowserStackServiceEndPoint: 'Bstack'
 - script: npm install
-
 - script: npm run single
+- task: BrowserStackResults@0
