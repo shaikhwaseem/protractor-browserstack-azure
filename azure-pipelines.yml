@@ -7,8 +7,8 @@ trigger:
 - master
 
 variables:
-  browserstackUser: $(BROWSERSTACK_USERNAME)
-  browserstackKey: $(BROWSERSTACK_ACCESS_KEY)
+  browserstackUser: $(waseemshaikh2)
+  browserstackKey: $(WyP6S4vxzCkJ3bdHGzx7)
 
 steps:
 - task: BrowserStackConfig@0
