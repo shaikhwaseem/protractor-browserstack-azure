@@ -18,3 +18,7 @@ steps:
 - script: npm install
 - script: npm run parallel
 - task: BrowserStackResults@0
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'NUnit'
+    testResultsFiles: '**/TEST-*.xml'
