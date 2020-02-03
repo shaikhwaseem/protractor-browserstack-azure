@@ -13,6 +13,9 @@ variables:
 steps:
 - task: BrowserStackConfig@0
   inputs:
+    BrowserStackServiceEndPoint: 'New_BrowserStack'
+- task: BrowserStackConfig@0
+  inputs:
     BrowserStackServiceEndPoint: 'BStack'
 - script: npm install
 - script: npm run parallel
