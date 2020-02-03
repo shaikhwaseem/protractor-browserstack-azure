@@ -7,16 +7,14 @@ trigger:
 - master
 
 variables:
-  browserstackUser: $(waseemshaikh2)
-  browserstackKey: $(WyP6S4vxzCkJ3bdHGzx7)
+  user: $(waseemshaikh2)
+  key: $(WyP6S4vxzCkJ3bdHGzx7)
 
 steps:
 - task: BrowserStackConfig@0
   inputs:
     BrowserStackServiceEndPoint: 'New_BrowserStack'
-- task: BrowserStackConfig@0
-  inputs:
-    BrowserStackServiceEndPoint: 'BStack'
+
 - script: npm install
 - script: npm run parallel
 - task: BrowserStackResults@0
